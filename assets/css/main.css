@@ -1,0 +1,747 @@
+@import url(nullStyles.css); 
+@import url(slick.css);
+
+@font-face {
+    font-family: "Evolventa";
+    src: url("../fonts/Evolventa-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: "Evolventa Bold";
+    src: url("../fonts/Evolventa-Bold.woff") format('woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Evolventa Oblique";
+    src: url("../fonts/Evolventa-Oblique.woff") format('woff');
+    font-style: italic;
+}
+@font-face {
+    font-family: "Evolventa Oblique Bold";
+    src: url("../fonts/Evolventa-BoldOblique.woff") format('woff');
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* Main styles */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn{
+    background-color: #fb6933;
+    color: #fff;
+    border-radius: 30px;
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(206, 209, 24);
+}
+
+.btn-small{
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.btn-medium{
+    width: 230px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.btn-big{
+    width: 450px;
+    height: 80px;
+    border-radius: 50px;
+    font-size: 22px;
+}
+
+.title{
+    font-size: 32px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fb6933;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+
+.bold-text{
+    font-family: "Evolventa Bold";
+}
+
+.orange{
+    color: #fb6933;
+}
+
+/* Header styles */
+
+.header{
+    background: url('https://www.merdandoener.ch/wp-content/uploads/2020/09/Basliksiz-1.jpg');
+    background-position: center;
+}
+
+.header__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header__logo{
+    max-width: 200px;
+}
+
+.header__logo img{
+    width: 100%;
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+}
+
+.menu__link{
+    font-size: 19px;
+    transition: all .3s ease;
+}
+
+.menu__link:not(:last-child){
+    margin-right: 18px;
+}
+
+.menu__link:hover{
+    color: #fb6933;
+}
+
+.menu__item{
+    list-style: none;
+}
+
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__socials a{
+    transition: all .3s ease;
+}
+
+.header__socials a:hover{
+    color: orange;
+}
+
+.header__socials a:first-child{
+    margin-bottom: 3px;
+}
+
+/* Burger-menu styles */
+
+.fa-solid{
+    font-size: 30px;
+}
+
+.header__menu-burger{
+    display: none;
+}
+
+.header__menu-slide{
+    display: none;
+    opacity: 0;
+    background-color: rgb(197, 103, 103);
+    padding: 20px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -250px;
+    z-index: 500;
+    transition: all 2s ease;
+}
+
+.header__slide-active{
+    right: 0;
+    display: block;
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.slide-xmark{
+    float: right;
+}
+
+.slide__menu-nav{
+    margin-top: 60px;
+}
+
+/* Hero styles */
+
+
+.hero__slider img{
+    background-size: contain;
+}
+
+.hero__slider .slick-prev,
+.hero__slider .slick-next,
+.cars__slider .slick-next,
+.cars__slider .slick-prev{
+    position: absolute;
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 50%;
+}
+
+.hero__slider .slick-prev{
+    left: 15px;
+}
+
+.hero__slider .slick-next{
+    right: 15px;
+}
+
+/* Доделать слайдер */
+
+.slider__item{
+    height: calc(95vh - 95px);
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+
+/* Cars  */
+
+
+.cars__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4vmax 0;
+}
+
+.cars__model {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+.model__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.model__title-img {
+    max-width: 9%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.model__title-img img{
+    width: 100%;
+    display: block;
+}
+
+.model__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #e3e0df;
+    border-radius: 12px;
+    max-width: 830px;
+}
+
+.model__item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: start;
+}
+
+.model__img {
+    max-width: 230px;
+    margin-bottom: 20px;
+
+}
+
+.model__img img{
+    width: 230px;
+    height: 180px;
+    display: block;
+    border-radius: 5px;
+}
+
+.model__about {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.model__button {
+    align-self: center;
+}
+
+
+/* Advantages styles */
+
+.advantages{
+    background: url('https://nb-tomsk.ru/wp-content/uploads/3/9/2/392b36dc57cea4319b8c69adf6b4b333.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages__bg{
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 5vmax 0;
+}
+
+.advantages__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages__title{
+    margin-bottom: 60px;
+}
+
+.advantages__columns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages__column-1,
+.advantages__column-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px -30px;
+    max-width: 45%;
+}
+
+.advantages__item{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 25px 0;
+    width: 80%;
+    height: 90px;
+}
+
+.advantages__item img{
+    max-width: 15%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.advantages__item p{
+    margin-left: 15px;
+}
+
+
+/* About Us styles */
+
+.about__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5vmax 0;
+}
+
+.about__row img{
+    max-width: 40%;
+    border-radius: 50%;
+    margin-right: 80px;
+    border: 5px solid #fb6933;
+}
+
+.about__title{
+    margin-bottom: 60px;
+}
+
+.about__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about__subtitle {
+    max-width: auto;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.about__nums {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.about__nums-item {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__nums-item span{
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+
+/* Questions styles */
+
+.questions {
+    background: url('https://img5.goodfon.ru/wallpaper/nbig/f/4f/mclaren-765lt-2020-belyi-povorot-trassa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.questions__bg {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.questions__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vmax 0 0 0;
+}
+
+.questions__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.questions__form {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: -1px -30px 67px 55px rgba(255, 255, 255, 0.6);
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.request__form{
+    margin-right: 45px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 14px;
+}
+
+.request__form p{
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.request__form fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#name,
+#phone,
+#email{
+    font-size: 20px;
+    padding: 0 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 540px;
+    height: 60px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#submit__button{
+    margin-top: 20px;
+}
+
+.questions__form img{
+    max-width: 400px;
+    display: inline-block;
+}
+
+
+/* Footer styles */
+
+.footer {
+    background-color: rgb(211, 211, 211);
+}
+
+.footer__row {
+    padding: 3vmax 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer__about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+.footer__column .footer__menu{
+    margin-bottom: 50px;
+}
+
+.column__connected{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer__navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25vh;
+}
+
+.footer__navigation__column{
+    margin-right: 80px;
+}
+
+.footer__navigation__column:last-child{
+    margin-right: 140px;
+}
+
+.footer__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.footer__menu {
+    list-style: none;
+    line-height: 1.3;
+    font-size: 17px;
+}
+
+.footer__link{
+    transition: all .3s ease;
+}
+
+.footer__link:hover{
+    color: orange;
+}
+
+.ul_list{
+    list-style:disc;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer__map iframe{
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+
+/* Adaptive styles */
+
+@media only screen and (max-width : 1150px) {
+    .header__menu{
+        margin-left: 50px;
+    }
+    .menu__link,
+    .header__socials a{
+        font-size: 17px;
+    }
+    .questions__form img{
+        max-width: 360px;
+    }
+}
+
+@media only screen and (max-width : 1024px) {
+    .header__menu{
+        display: none;
+    }
+    .header__menu-burger{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .container{
+        padding: 0 25px;
+    }
+    .header__socials{
+        display: none;
+    }
+    #name,
+    #phone,
+    #email{
+        width: 450px;
+    }
+    .request__form p{
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width : 1100px){
+    .advantages__item{
+        height: 120px;
+        border-radius: 55px;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .questions__form img{
+        max-width: 300px;
+        margin-top: 60px;
+    }
+    .request__form{
+        margin-right: 0px;
+    }
+    .advantages__item{
+        height: 95px;
+        width: 500px;
+        border-radius: 55px;
+    }
+    .advantages__columns{
+        flex-direction: column;
+    }
+    .advantages__column-1,
+    .advantages__column-2{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .header__socials{
+        font-size: 15px;
+    }
+    .header__logo img{
+        width: 70%;
+    }
+    .questions__form img{
+        display: none;
+    }
+    .title{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width : 560px){
+    .advantages__item{
+        height: 95px;
+        width: 400px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    #name,
+    #phone,
+    #email{
+        width: 400px;
+        height: 45px;
+    }
+    .title{
+        width: 370px;
+        font-size: 24px;
+    }
+    .btn-medium{
+        width: 205px;
+        height: 40px;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width : 420px) {
+    #name,
+    #phone,
+    #email{
+        width: 300px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .title{
+        width: 300px;
+        font-size: 20px;
+    }
+    .advantages__item{
+        height: 105px;
+        width: 360px;
+    }
+}
+
+@media only screen and (max-width : 380px) {
+    .advantages__item{
+        height: 125px;
+        width: 300px;
+        font-size: 15px;
+        padding: 7px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    #name,
+    #phone,
+    #email{
+        width: 280px;
+        height: 40px;
+    }
+    .title{
+        width: 260px;
+        font-size: 18px;
+    }
+    .btn-medium{
+        width: 195px;
+        height: 35px;
+    }
+}
