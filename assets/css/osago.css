@@ -241,17 +241,18 @@
 }
 
 .osago__image{
-    max-width: 350px;
+    width: 100%;
 }
 
 .osago__image img{
-    width: 100%;
-    border-radius: 8px;
+    max-width: 300px;
+    border-radius: 5px;
 }
 
 .osago__text{
     font-size: 17px;
     margin-left: 40px;
+    align-self: center;
 }
 
 
@@ -263,6 +264,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 3vmax 0;
 }
 
 .calc__lines{
@@ -309,7 +311,7 @@
 }
 
 .checkbox__rounded:checked{
-    background-color: aqua;
+    background-color: #fb6933;
 }
 
 .calc__line-multy {
