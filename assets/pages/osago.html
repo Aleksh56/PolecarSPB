@@ -41,22 +41,22 @@
                     <div class="header__menu-slide">
                         <i class="fa-solid fa-xmark slide-xmark"></i>
                         <div class="slide__menu-nav">
-                            <a href="index.html" class="menu__link">
+                            <a href="../../index.html" class="menu__link">
                                 <li class="menu__item">Главная</li>
                             </a>
-                            <a href="assets/pages/osago.html" class="menu__link">
+                            <a href="osago.html" class="menu__link">
                                 <li class="menu__item">КАСКО/ОСАГО</li>
                             </a>
-                            <a href="assets/pages/contacts.html" class="menu__link">
+                            <a href="contacts.html" class="menu__link">
                                 <li class="menu__item">Контакты</li>
                             </a>
-                            <a href="assets/pages/diagnostic.html" class="menu__link">
+                            <a href="diagnostic.html" class="menu__link">
                                 <li class="menu__item">Диагностические карты</li>
                             </a>
-                            <a href="tel:79999999990" class="menu__link">
-                                <li class="menu__item">7-999-999-99-99</li>
+                            <a href="tel:78129099848" class="menu__link">
+                                <li class="menu__item">7 (812) 909-98-48</li>
                             </a>
-                            <a href="#" class="menu__link">
+                            <a href="mailto:PoleCarSPB@yandex.ru" class="menu__link">
                                 <li class="menu__item">PoleCarSPB@yandex.ru</li>
                             </a>
                         </div>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="osago__about">
                         <div class="osago__image">
-                            <img src="https://s1.1zoom.ru/b7155/210/Aston_Martin_2007-12_DBS_Silver_color_566103_2048x2732.jpg" alt="">
+                            <img src="../images/test.jpg" alt="">
                         </div>
                         <div class="osago__text">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga fugit similique ratione, quibusdam deleniti optio. Ratione ipsum possimus tenetur porro velit corrupti, fuga fugit eaque. Facilis ea quis iusto tempore, deserunt atque alias voluptas tempora accusantium maiores laudantium sint perspiciatis recusandae totam, voluptates, assumenda velit magnam similique quia ad sunt fugiat error qui quidem. Magni quae quibusdam incidunt neque eligendi aliquam. Est beatae corrupti dolore dolor. Minima iste expedita cupiditate.</p>
@@ -99,13 +99,26 @@
                                 <label for="osago">ОСАГО</label>
                             </div>
                         </div>
-                        <div class="calc__line">
+                        <div class="calc__line xl__line">
                             <div class="line__title">
                                 Информация о кредите
                             </div>
                             <div class="line__choose">
                                 <input type="checkbox" name="fullmoney" id="fullmoney" class="checkbox__rounded">
                                 <label for="casco">Транспортное средство куплено за счет собственных средств</label>
+                                <input type="checkbox" name="credit" id="credit" class="checkbox__rounded">
+                                <label for="osago">Транспортное средство куплено в кредит</label>
+                            </div>
+                        </div>
+                        <div class="long__line">
+                            <div class="line__title">
+                                Информация о кредите
+                            </div>
+                            <div class="long__item item-fist">
+                                <input type="checkbox" name="fullmoney" id="fullmoney" class="checkbox__rounded">
+                                <label for="casco" id="long__casco">Транспортное средство куплено за счет собственных средств</label>
+                            </div>
+                            <div class="long__item">
                                 <input type="checkbox" name="credit" id="credit" class="checkbox__rounded">
                                 <label for="osago">Транспортное средство куплено в кредит</label>
                             </div>
@@ -325,5 +338,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/burger.js"></script>
+    <script src="https://kit.fontawesome.com/0bbb4a950e.js" crossorigin="anonymous"></script>
 </body>
 </html>
