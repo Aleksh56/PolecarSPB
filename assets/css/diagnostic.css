@@ -943,7 +943,11 @@
     .examples__row .examples__item:first-child{
         margin-bottom: 30px;
     }
-    .cars__about{
+    .cars__about,
+    .moto__about,
+    .bus__about,
+    .back__about,
+    .bigcar__about{
         flex-direction: column;
         text-align: center;
     }
