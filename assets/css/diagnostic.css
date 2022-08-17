@@ -500,13 +500,6 @@
     color: #f84a0a;
 }
 
-.tech__list {
-    
-}
-
-.cars__list {
-
-}
 .tech__list-item {
     text-indent: 15px;
     font-size: 17px;
@@ -521,9 +514,165 @@
     color: #f84a0a;
 }
 
+/* Period styles */
+
+.period {
+    background-color: #dadada;
+}
+
+.period__row {
+    padding: 3vmax 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.period__table {
+    width: 85%;
+    border: 2px solid #000000;
+    border-collapse:collapse;
+    padding:5px;
+}
+
+.period__table th {
+    border: 1px solid #000000;
+    padding: 10px;
+    background: #ffffff;
+    color: #313030;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.period__table td {
+    border:1px solid #000000;
+    text-align:center;
+    padding: 10px;
+    background: #ffffff;
+    color: #313030;
+}
+
+/* FAQ styles */
 
 
+.faq__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vmax 0;
+}
 
+.faq__title{
+    width: 600px;
+}
+
+.faq__item-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__item-title:hover{
+    cursor: pointer;
+}
+
+.faq__item-title p{
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.faq__item-title span{
+    font-size: 23px;
+    color: #fb6933;
+}
+
+.faq__item-text{
+    padding: 15px 50px 10px 30px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.fa-angle-down,
+.fa-angle-up{
+    color: #fb6933;
+    font-size: 36px;
+}
+
+/* Questions styles */
+
+.questions {
+    background: url('https://img5.goodfon.ru/wallpaper/nbig/f/4f/mclaren-765lt-2020-belyi-povorot-trassa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.questions__bg {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.questions__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vmax 0 0 0;
+}
+
+.questions__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.questions__form {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: -1px -30px 67px 55px rgba(255, 255, 255, 0.6);
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.request__form{
+    margin-right: 45px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 14px;
+}
+
+.request__form p{
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.request__form fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#name,
+#phone,
+#email{
+    font-size: 20px;
+    padding: 0 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 540px;
+    height: 60px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#submit__button{
+    margin-top: 20px;
+}
+
+.questions__form img{
+    max-width: 400px;
+    display: inline-block;
+}
 
 
 
