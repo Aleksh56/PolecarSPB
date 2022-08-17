@@ -44,4 +44,62 @@ $(document).ready(function(){
     }
   });
 
+  function faqSlidesToggler(){}
+
+  $(".faq__item-1").click(() => {
+    $(".text-item-1").slideToggle("slow");
+    $(".faq__item-1").toggleClass("faq_open");
+    $(".text-item-1").css("display", "block");
+    $(".solid-1").toggleClass("fa-angle-down")
+    $(".solid-1").toggleClass("fa-angle-up")
+  })
+
+  $(".faq__item-2").click(() => {
+    $(".text-item-2").slideToggle("slow");
+    $(".faq__item-2").toggleClass("faq_open");
+    $(".text-item-2").css("display", "block");
+    $(".solid-2").toggleClass("fa-angle-down")
+    $(".solid-2").toggleClass("fa-angle-up")
+  })
+
+  $(".faq__item-3").click(() => {
+    $(".text-item-3").slideToggle("slow");
+    $(".faq__item-3").toggleClass("faq_open");
+    $(".text-item-3").css("display", "block");
+    $(".solid-3").toggleClass("fa-angle-down")
+    $(".solid-3").toggleClass("fa-angle-up")
+  })
+
+  $(".faq__item-4").click(() => {
+    $(".text-item-4").slideToggle("slow");
+    $(".faq__item-4").toggleClass("faq_open");
+    $(".text-item-4").css("display", "block");
+    $(".solid-4").toggleClass("fa-angle-down")
+    $(".solid-4").toggleClass("fa-angle-up")
+  })
+
+  $(".faq__item-5").click(() => {
+    $(".text-item-5").slideToggle("slow");
+    $(".faq__item-5").toggleClass("faq_open");
+    $(".text-item-5").css("display", "block");
+    $(".solid-5").toggleClass("fa-angle-down")
+    $(".solid-5").toggleClass("fa-angle-up")
+  })
+
+  $(".faq__item-6").click(() => {
+    $(".text-item-6").slideToggle("slow");
+    $(".faq__item-6").toggleClass("faq_open");
+    $(".text-item-6").css("display", "block");
+    $(".solid-6").toggleClass("fa-angle-down")
+    $(".solid-6").toggleClass("fa-angle-up")
+  })
+
+  $(".faq__item-7").click(() => {
+    $(".text-item-7").slideToggle("slow");
+    $(".faq__item-7").toggleClass("faq_open");
+    $(".text-item-7").css("display", "block");
+    $(".solid-7").toggleClass("fa-angle-down")
+    $(".solid-7").toggleClass("fa-angle-up")
+  })
+
 });
