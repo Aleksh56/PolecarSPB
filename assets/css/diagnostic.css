@@ -352,11 +352,7 @@
 }
 
 
-/* Process styles */
-
-.process {
-
-}
+/* Process + tech styles */
 
 .process__row {
     display: flex;
@@ -423,8 +419,6 @@
 }
 .backcar__button {
 }
-
-
 .process__about {
 
 }
@@ -465,6 +459,66 @@
 .process__text-cost {
     font-size: 15px;
     font-weight: 700;
+}
+
+.tech {
+    background: url('../images/tech__bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tech__bg {
+    background-color: rgba(255, 255, 255, 0.85);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+.tech__row {
+    padding: 3vmax 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tech__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tech__about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech__image {
+    font-size: 440px;
+    font-family: serif;
+    color: #f84a0a;
+}
+
+.tech__list {
+    
+}
+
+.cars__list {
+
+}
+.tech__list-item {
+    text-indent: 15px;
+    font-size: 17px;
+}
+
+.tech__list-item:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.tech__list-item span{
+    font-size: 17px;
+    color: #f84a0a;
 }
 
 
