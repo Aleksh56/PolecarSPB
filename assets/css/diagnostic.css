@@ -352,6 +352,122 @@
 }
 
 
+/* Process styles */
+
+.process {
+
+}
+
+.process__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vmax 0;
+}
+
+.process__title {
+    width: 600px;
+}
+
+.process__buttons {
+    margin-bottom: 60px;
+    border: 2px solid black;
+    border-radius: 17px;
+    padding: 0 2px;
+}
+
+.process__buttons button{
+    padding: 20px 50px;
+    margin: 0 -2px;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+.process__buttons button:hover{
+    background-color: #63514a;
+    color: #fff;
+}
+
+.process__buttons button:not(:last-child){
+    border-right: 2px solid black;
+}
+
+.process__buttons button:first-child{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.process__buttons button:last-child{
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.process-activeBtn{
+    color: #fff;
+    background-color: #fb6933;
+    transition: all .3s ease;
+}
+
+.process-activeBtn:hover{
+    background-color: #f84a0a !important;
+}
+
+.car__button {
+}
+.moto__button {
+}
+.bus__button {
+}
+.bigcar__button {
+}
+.backcar__button {
+}
+
+
+.process__about {
+
+}
+
+.cars__about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.process__image {
+    width: 100%;
+}
+
+.process__image img{
+    max-width: 320px;
+    border-radius: 50%;
+}
+
+.process__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 40px;
+}
+.process__text-title {
+    width: 400px;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.process__text-subtitle {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.process__text-cost {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
 
 
 
