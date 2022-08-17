@@ -192,6 +192,7 @@
 
 .hero__slider img{
     background-size: contain;
+    max-width: 100%;
 }
 
 .hero__slider .slick-prev,
@@ -218,7 +219,7 @@
 /* Доделать слайдер */
 
 .slider__item{
-    height: calc(95vh - 95px);
+    height: 100vh;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -606,6 +607,9 @@
     .questions__form img{
         max-width: 360px;
     }
+    .slider__item{
+        height: 627px;
+    }
 }
 
 @media only screen and (max-width : 1024px) {
@@ -629,6 +633,9 @@
     }
     .request__form p{
         font-size: 21px;
+    }
+    .slider__item{
+        height: 570px;
     }
 }
 
@@ -659,6 +666,13 @@
     .advantages__column-2{
         margin: 0;
     }
+    
+}
+
+@media only screen and (max-width : 880px){
+    .slider__item{
+        height: 480px;
+    }
 }
 
 @media only screen and (max-width : 768px) {
@@ -674,6 +688,15 @@
     .title{
         width: 450px;
     }
+    .slider__item{
+        height: 410px;
+    }
+}
+
+@media only screen and (max-width : 620px){
+    .slider__item{
+        height: 335px;
+    }
 }
 
 @media only screen and (max-width : 560px){
@@ -681,6 +704,17 @@
         height: 95px;
         width: 400px;
         font-size: 16px;
+    }
+    .slider__item{
+        height: 290px;
+    }
+    .fa-solid{
+        font-size: 20px;
+    }
+    .slick-next,
+    .slick-prev{
+        width: 30px !important;
+        height: 30px !important;
     }
 }
 
@@ -700,6 +734,9 @@
         height: 40px;
         font-size: 17px;
     }
+    .slider__item{
+        height: 250px;
+    }
 }
 
 @media only screen and (max-width : 420px) {
@@ -718,6 +755,9 @@
         height: 105px;
         width: 360px;
     }
+    .slider__item{
+        height: 233px;
+    }
 }
 
 @media only screen and (max-width : 380px) {
@@ -726,6 +766,15 @@
         width: 300px;
         font-size: 15px;
         padding: 7px;
+    }
+    .slider__item{
+        height: 211px;
+    }
+}
+
+@media only screen and (max-width : 350px){
+    .slider__item{
+        height: 175px;
     }
 }
 

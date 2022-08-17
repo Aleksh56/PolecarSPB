@@ -5,7 +5,8 @@ $(document).ready(function(){
     $('.hero__slider').slick({
       arrows: true,
       autoplay: true,
-      adaptiveHeight: false
+      adaptiveHeight: true,
+      mobileFirst: true
     });
 
     function deleteTextInSlickSliderButtons(){
