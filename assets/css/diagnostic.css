@@ -828,6 +828,9 @@
         height: 120px;
         border-radius: 55px;
     }
+    .process__buttons button{
+        padding: 15px 35px;
+    }
 }
 
 @media only screen and (max-width : 992px) {
@@ -873,6 +876,9 @@
         justify-content: center;
         flex-direction: column;
     }
+    .process__buttons button{
+        padding: 12px 28px;
+    }
 }
 
 @media only screen and (max-width : 880px){
@@ -889,6 +895,31 @@
     .footer__where__column{
         margin-right: 10px;
     }
+    .process__buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .process__buttons button{
+        width: 250px;
+    }
+    .process__buttons button:first-child{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+    }
+    .process__buttons button:last-child{
+        border-top-right-radius:0;
+        border-bottom-left-radius: 15px;
+    }
+    .process__buttons button:not(:last-child){
+        border: 0;
+        border-bottom: 1px solid black;
+    }
+    .process__image img{
+        max-width: 280px;
+    }
 }
 
 @media only screen and (max-width : 768px) {
@@ -903,6 +934,23 @@
     }
     .title{
         width: 450px;
+    }
+    .examples__row{
+        flex-direction: column;
+    }
+    .examples__row .examples__item:first-child{
+        margin-bottom: 30px;
+    }
+    .cars__about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .process__text{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        margin-top: 20px;
     }
 }
 
@@ -1020,6 +1068,13 @@
     .reg__text h4{
         font-size: 19px;
     }
+    .process__text-title{
+        width: 300px;
+        font-size: 15px;
+    }
+    .process__text-subtitle{
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width : 380px) {
@@ -1049,6 +1104,9 @@
         width: 270px;
         font-size: 18px;
         height: 70px;
+    }
+    .process__text-title{
+        width: 260px;
     }
 }
 
