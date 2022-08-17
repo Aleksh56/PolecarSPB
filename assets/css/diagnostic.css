@@ -210,7 +210,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vh;
 }
 
 .reg__text h4{
@@ -920,6 +919,9 @@
     .process__image img{
         max-width: 280px;
     }
+    .tech__title{
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width : 768px) {
@@ -952,6 +954,12 @@
         margin: 0px;
         margin-top: 20px;
     }
+    .tech__about{
+        flex-direction: column;
+    }
+    .tech__image{
+        font-size: 150px;
+    }
 }
 
 @media only screen and (max-width : 680px){
@@ -967,6 +975,9 @@
     .reg__text li{
         font-size: 15px;
         list-style: none;
+    }
+    .reg__text h4{
+        width: auto;
     }
 }
 
@@ -1074,6 +1085,10 @@
     }
     .process__text-subtitle{
         font-size: 14px;
+    }
+    .tech__title{
+        font-size: 16px;
+        text-align: center;
     }
 }
 
