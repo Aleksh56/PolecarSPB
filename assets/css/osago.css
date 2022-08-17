@@ -272,8 +272,9 @@
     align-self: flex-start;
 }
 
-.calc__lines {
-
+.calc__lines option,
+.calc__driver option{
+    color: #000;
 }
 
 .calc__line {
@@ -636,7 +637,7 @@
 @media only screen and (max-width : 480px) {
     .title{
         width: 370px;
-        font-size: 24px;
+        font-size: 22px;
     }
     .btn-medium{
         width: 205px;
@@ -679,7 +680,7 @@
         height: 70px;
     }
     .title{
-        font-size: 16px;
+        font-size: 14px;
     }
     .application__button{
         width: 280px;
