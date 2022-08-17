@@ -256,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="application__button btn btn-mediumPlus">
+                    <button data-modal class="application__button btn btn-mediumPlus">
                         Оставить заявку на рассчет
                     </button>
                 </div>
@@ -319,7 +319,7 @@
                             </nav>
                         </div>
                         <div class="footer__callback-button">
-                            <button class="footer__button btn btn-big">
+                            <button data-modal class="footer__button btn btn-big">
                                 Заказать обратный звонок
                             </button>
                         </div>
@@ -329,7 +329,7 @@
                             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4310a20cd4b5d39b81d86eb0913bbf2c3420882ebde4ad9ba57233bea7c20a2a&amp;source=constructor" width="550" height="550" frameborder="0"></iframe>
                         </div>
                         <div class="footer__callback-button footer__button-2">
-                            <button class="footer__button btn btn-big">
+                            <button data-modal class="footer__button btn btn-big">
                                 Заказать обратный звонок
                             </button>
                         </div>
@@ -338,8 +338,23 @@
             </div>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="../php/send.php" method="post">
+                    <div data-modalClose class="modal__close">&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <input required placeholder="Ваш Email" name="email" type="email" class="modal__input">
+                    <button class="btn btn-medium">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="../js/burger.js"></script>
+    <script src="../js/script.js"></script>
     <script src="https://kit.fontawesome.com/0bbb4a950e.js" crossorigin="anonymous"></script>
 </body>
 </html>
