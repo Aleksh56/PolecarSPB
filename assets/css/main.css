@@ -891,6 +891,7 @@
     }
     .title{
         width: 450px;
+        text-align: center;
     }
     .slider__item{
         height: 410px;

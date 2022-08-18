@@ -613,6 +613,7 @@
     .title{
         width: 450px;
         font-size: 28px;
+        text-align: center;
     }
     .calc__line-multy{
         flex-direction: column;

@@ -1011,6 +1011,7 @@
     }
     .title{
         width: 450px;
+        text-align: center;
     }
     .examples__row{
         flex-direction: column;
