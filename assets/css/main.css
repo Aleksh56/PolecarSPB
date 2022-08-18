@@ -216,13 +216,18 @@
     right: 15px;
 }
 
-/* Доделать слайдер */
 
 .slider__item{
     height: 100vh;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
+}
+
+.slider__link{
+    position: relative;
+    top: 58%;
+    left: 6%;
 }
 
 
@@ -747,6 +752,15 @@
     .footer__navigation__column:last-child{
         margin-right: 80px;
     }
+    .slider__link{
+        position: relative;
+        top: 54%;
+        left: 5%;
+    }
+    .btn-slider{
+        width: 380px;
+        height: 65px;
+    }
 }
 
 @media only screen and (max-width : 1050px) {
@@ -877,6 +891,10 @@
     .footer__where__column{
         margin-right: 10px;
     }
+    .btn-slider{
+        width: 330px;
+        height: 50px;
+    }
 }
 
 @media only screen and (max-width : 768px) {
@@ -916,6 +934,10 @@
         width: 260px;
         font-size: 18px;
         height: 70px;
+    }
+    .btn-slider{
+        width: 280px;
+        height: 40px;
     }
 }
 
@@ -1015,6 +1037,9 @@
     .model__button button{
         width: 140px;
         font-size: 11px;
+    }
+    .btn-slider{
+      display: none;
     }
 }
 
