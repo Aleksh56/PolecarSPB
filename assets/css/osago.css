@@ -170,7 +170,7 @@
 .header__menu-slide{
     display: none;
     opacity: 0;
-    background-color: rgb(197, 103, 103);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     height: 100vh;
     position: absolute;
