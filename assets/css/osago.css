@@ -703,6 +703,7 @@
     .title{
         width: 370px;
         font-size: 22px;
+        text-align: center;
     }
     .btn-medium{
         width: 205px;

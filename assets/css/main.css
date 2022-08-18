@@ -302,6 +302,7 @@
 .model__about {
     font-size: 26px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .model__button {

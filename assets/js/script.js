@@ -18,7 +18,6 @@ $(document).ready(function(){
   }
 
   function showInfo(i = 0){
-    BUTTONS_CONTENT[i].classList.add("fadeIn");
     BUTTONS_CONTENT[i].style.display = "flex";
     PROCESS_BUTTONS[i].classList.add("process-activeBtn");
   }
@@ -102,41 +101,5 @@ $(document).ready(function(){
     $(".solid-7").toggleClass("fa-angle-up")
   })
 
-
-  const modal = document.querySelector(".modal"),
-          contactUsButton = document.querySelectorAll("[data-modal]"),
-          modalWindowCloseButton = document.querySelector("[data-modalClose]");
-
-    function showModalWindow(){
-        modal.style.display = "block"
-        document.body.style.overflow = "hidden"
-    }
-
-    function closeModalWindow(){
-        modal.style.display = "none"
-        document.body.style.overflow = ""
-    }
-
-    contactUsButton.forEach(btn => {
-        btn.addEventListener("click", () => {
-            showModalWindow();
-        })
-    });
-
-    modalWindowCloseButton.addEventListener("click", () => {
-        closeModalWindow();
-    });
-
-    modal.addEventListener("click", (e) => {
-        if(e.target === modal){
-            closeModalWindow();
-        }
-    });
-
-    document.addEventListener("keydown", (e) => {
-        if(e.code === "Escape"){
-            closeModalWindow();
-        }
-    });
 
 });
