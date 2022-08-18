@@ -1094,6 +1094,13 @@
     .reg__text li{
         display: inline-block;
         width: 400px;
+    }   
+    .period__table{
+        height: 800px;
+    }
+    .period__table th,
+    .period__table td{
+        font-size: 14px;
     }
 }
 
@@ -1123,6 +1130,11 @@
     }
     .reg__image img{
         max-width: 250px;
+    }
+    .period__table th,
+    .period__table td{
+        font-size: 12px;
+        padding: 5px;
     }
 }
 
@@ -1185,6 +1197,11 @@
     }
     .reg__title{
         font-size: 16px !important;
+    }
+    .period__table th,
+    .period__table td{
+        font-size: 10px;
+        padding: 2px;
     }
 }
 
