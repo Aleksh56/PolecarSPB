@@ -699,6 +699,11 @@
         font-size: 20px;
         height: 70px;
     }
+    .modal__content{
+        width: 85%;
+        padding: 38px;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -735,6 +740,30 @@
         width: 300px;
         height: 55px;
     }
+    .modal .btn{
+        width: 220px;
+    }
+    .modal__input{
+        width: 235px;
+        height: 40px;
+        padding: 0 10px;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width : 380px) {
+    .modal .btn{
+        width: 175px;
+        font-size: 15px;
+    }
+    .modal__input{
+        width: 200px;
+        height: 35px;
+        padding: 0;
+        font-size: 14px;
+    }
+    .modal__title{
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width : 350px){
@@ -754,6 +783,17 @@
         width: 280px;
         height: 50px;
         font-size: 16px;
+    }
+    .modal .btn{
+        width: 160px;
+        font-size: 14px;
+    }
+    .modal__input{
+        width: 185px;
+        height: 30px;
+    }
+    .modal__title{
+        font-size: 15px;
     }
 }
 
