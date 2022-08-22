@@ -69,7 +69,6 @@
         <div class="hero__row">
             <div class="hero__slider">
                 <div class="slider__item" style="background: url('assets/images/reklama-1.png') ;"></div>
-                <div class="slider__item" style="background: url('assets/images/solaris_ad_WL.png') ;"></div>
                 <div class="slider__item" style="background: url('assets/images/reklama-2.png') ;">
                     <!-- <a href="assets/pages/osago.html" class="slider__link">
                         <button class="btn btn-big btn-slider">Рассчитать стоимость</button>
@@ -530,37 +529,39 @@
     <div class="modal">
         <div class="modal__dialog">
             <div class="modal__content">
-                <form action="assets/php/send.php" method="post">
+                <form action="" method="post" id="form" class="ajax-contact-form">
                     <div data-modalClose class="modal__close">&times;</div>
                     <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
-                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
-                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-                    <input required placeholder="Ваш Email" name="mail" type="email" class="modal__input">
-                    <button class="btn btn-medium">Перезвонить мне</button>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input _req">
+                    <input required placeholder="Ваш номер телефона" name="tel" type="tel" class="modal__input _req">
+                    <input required placeholder="Ваш Email" name="email" type="email" class="modal__input _req _email">
+                    <button class="btn btn-medium recall__btn">Перезвонить мне</button>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- <div class="popup__confirmed">
+    <div class="popup__confirmed">
         <div class="confirmed__row">
             <div class="confirmed__content">
                 <div class="confirmed__icon">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-check"></i>
                 </div>
                 <div class="confirmed__text">
-                    <div data-modalClose class="modal__close">&times;</div>
+                    <div data-modalClosePopUp class="modal__close">&times;</div>
                     <h4>Заявка отправлена</h4>
                     <p>Мы перезвоним вам в течение 10 минут</p>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0bbb4a950e.js" crossorigin="anonymous"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/modal.js"></script>
+    <script src="assets/js/popup.js"></script>
     <script src="assets/js/burger.js"></script>
+    <script src="assets/js/contactform.js"></script>
 </body>
 </html>
